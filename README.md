@@ -121,25 +121,25 @@ Il faut noter que les fichier CoNLL-U d'entrée pour ces classes est le même fi
 
 
 ## Les fichers
-  * Tokenisation.py
+  * **Tokenisation.py**
     * Toléniser les fichiers XML, et les écrire dans le ficher CoNLL-U.
-  * Lemmatisation.py
+  * **Lemmatisation.py**
     * Lémmatiser les tokens du ficher CoNLL-U, et ajouter les lemmas dans ce ficher.
-  * Posparse.py
-    * réaliser l'étiquetage de parties du discours et l'ajouter dans ce ficher.
-  * Featsparse.py
+  * **Posparse.py**
+    * Réaliser l'étiquetage de parties du discours et l'ajouter dans ce ficher.
+  * **Featsparse.py**
     * Calculer les caractéristiques pour chaque jeton et l'ajouter dans ce ficher.
-  * Depparse.py
+  * **Depparse.py**
     * Réaliser l'analyse des dépendances et l'ajouter dans ce ficher.
-  * Headparse.py
+  * **Headparse.py**
     * Réaliser l'analyse de la tête de chaque jeton et l'ajouter dans ce ficher.
-  * main.py
+  * **main.py**
     * Il est résponsable de réaliser l'annotation en appelant toutes les classes.
-  * test.xml
+  * **test.xml**
     * Ce ficher xml est utilisé pour un petit test.
-  * test.conllu
+  * **test.conllu**
     * Le résultat de test.
-  * requirements.txt
+  * **requirements.txt**
     * Le ficher à installer.
 
 
