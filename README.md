@@ -1,4 +1,4 @@
-# Manuel d'utilisation de l'annotation au format CoNLL-U
+# Manuel d'utilisation de l'annotation 
 
 ## Description:
 Cet API est principalement utilisé pour convertir un fichier XML en format CoNLL-U et effectuer la tokénisation de mots à l'aide de la fonction ***'Tokenisation.py'***, et puis les écrit dans un ficher CoNLL-U. Et puis cet API réalise une séries de fonctions, ***'Lemmatisation.py'***, ***'Posparse.py'***, ***'Featsparse.py'***, ***'Depparse.py'***, ***'Headparse.py'*** pour le traitement de la langue, tels que la segmentation des mots, la lemmatisation et l'étiquetage morphosyntaxique etc, et les écrit dans un même ficher CoNLL-U. ***'main.py'*** est responsable d'appeler les modules qu'on a mentionné au-dessus afin de réaliser le traitement de la langue.
@@ -62,7 +62,7 @@ processors={
    
 Puis on appèle les autres classes, ***'Lemmatisation'***, ***'Posparse'***, ***'Featsparse'***, ***'Depparse'***, ***'Headparse'***. 
 
-Il faut noter que les fichier CoNLL-U d'entrée pour ces classes est le fichier de sortie de la tokenisation alors que le  format de processors est le même que celui mentionné ci-dessus.
+Il faut noter que les fichier CoNLL-U d'entrée pour ces classes est le même ficher CoNLL-U alors que le  format de processors est le même que celui mentionné ci-dessus.
 
 
 ## API
@@ -118,3 +118,32 @@ Il faut noter que les fichier CoNLL-U d'entrée pour ces classes est le fichier 
 
 * **main.py**
   * Ce code permet de faire appel aux différentes classes pour le traitement de la langue, tels que la segmentation des mots, la lemmatisation et l'étiquetage morphosyntaxique etc.
+
+
+## Les fichers
+  * Tokenisation.py
+    * Toléniser les fichiers XML, et les écrire dans le ficher CoNLL-U.
+  * Lemmatisation.py
+    * Lémmatiser les tokens du ficher CoNLL-U, et ajouter les lemmas dans ce ficher.
+  * Posparse.py
+    * réaliser l'étiquetage de parties du discours et l'ajouter dans ce ficher.
+  * Featsparse.py
+    * Calculer les caractéristiques pour chaque jeton et l'ajouter dans ce ficher.
+  * Depparse.py
+    * Réaliser l'analyse des dépendances et l'ajouter dans ce ficher.
+  * Headparse.py
+    * Réaliser l'analyse de la tête de chaque jeton et l'ajouter dans ce ficher.
+  * main.py
+    * Il est résponsable de réaliser l'annotation en appelant toutes les classes.
+  * test.xml
+    * Ce ficher xml est utilisé pour un petit test.
+  * test.conllu
+    * Le résultat de test.
+  * requirements.txt
+    * Le ficher à installer.
+
+
+## Améliorations possibles
+
+
+
